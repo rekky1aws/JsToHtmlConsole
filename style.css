@@ -1,0 +1,30 @@
+body {
+	background-color: #1D1D1D;
+	color: #EEEEEE;
+	font-family:  Helvetica, sans-serif;
+}
+
+#consoleDiv {
+	height: 70vh;
+	overflow:  auto;
+}
+
+#prompt {
+	width: 50vw,;
+	background-color: #2C2C2C;
+	border:  none;
+	height: 50px;
+	color:  #EEEEEE;
+}
+
+.objectKey {
+	color: blue;
+}
+
+.objectValue {
+	color: orange;
+}
+
+.nullReturn {
+	color: grey;
+}
