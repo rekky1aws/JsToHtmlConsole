@@ -12,3 +12,5 @@ L'affichage des objets est récursif. C'est à dire qu'un objet dans un objet s'
 
 ## Bugs
 Pour l'instant il n'est pas possible de sauvegarder des données depuis l'input de la fausse console. 
+
+Il n'est pas non plus possible pour le moment de passer plusieurs arguments dans console.log(), il est conseillé d'opter pour des interpolations de strings.

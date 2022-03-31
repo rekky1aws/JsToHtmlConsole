@@ -8,6 +8,7 @@
 
 ## Correction de Bugs à faire
  + Faire en sorte qu'undifined n'apparaisse plus lorsque l'on navigue dans l'historique des saisies.
+ + Faire en sorte de pouvoir utiliser plusieurs arguments dans console.log()
 
 
 # Fonctionnalités ajoutées
