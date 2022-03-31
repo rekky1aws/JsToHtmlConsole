@@ -6,5 +6,10 @@
  + Améliorer l'affichage des objes et des tableaux
  + Améliorer le rendu visuel global
 
-## Correction de Bugs
+## Correction de Bugs à faire
  + Faire en sorte qu'undifined n'apparaisse plus lorsque l'on navigue dans l'historique des saisies.
+
+
+# Fonctionnalités ajoutées
+
+ + Affichage récursif des objets

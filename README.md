@@ -6,7 +6,9 @@ Mettre les fichiers dans un dossier. Par défaut, le code JavaScript se place da
 
 Dans le champ imput on peu saisir des commandes a executer en JavaScript qui seront envoyée une fois la touche Entrée enfoncée.
 
-Les flèches du haut et du bas peuvent être utilisées pour accéder à l'historique des commandes tapées depuis le dernier chargement de la page. 
+Les flèches du haut et du bas peuvent être utilisées pour accéder à l'historique des commandes tapées depuis le dernier chargement de la page.
+
+L'affichage des objets est récursif. C'est à dire qu'un objet dans un objet s'affichera correctement.
 
 ## Bugs
 Pour l'instant il n'est pas possible de sauvegarder des données depuis l'input de la fausse console. 

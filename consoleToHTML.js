@@ -1,4 +1,4 @@
-let version = "indev:0.2";
+let version = "indev:0.3";
 let author = "Donatien HOCHART";
 let lastUpdate = "2022-03-29";
 
@@ -9,11 +9,16 @@ function displayElement(obj)
 	for (let i = 0; i < keys.length; i++) {
 		let val = obj[keys[i]];
 	  	//console.log(val);
-	  	resultStr+="<span class=\"objectKey\">"+keys[i]+"</span> : <span class=\"objectValue\">"+val+"</span>";
-	  	if (i!=keys.length-1)
-  		{
-	  		resultStr+=", ";
-  		}
+  		if (typeof val==="number" || typeof val==="string" || typeof val==="boolean")
+		{
+			resultStr+="<span class=\"objectKey\">"+keys[i]+"</span> : <span class=\"objectValue\">"+val+", </span>";
+		} else if (typeof val==="null") {
+			rresultStr+="<span class=\"objectKey\">"+keys[i]+"</span> : <span class=\"objectValue\">null, </span>";
+		} else if (typeof val==="undefined") {
+			resultStr+="<span class=\"objectKey\">"+keys[i]+"</span> : <span class=\"objectValue\">undefined, </span>";
+		} else {
+			resultStr+="<br><span class=\"objectKey\">"+keys[i]+"</span> : <span class=\"objectValue\">"+displayElement(val)+", </span><br>";
+		}
 	}
 	return resultStr+" }";
 }
@@ -21,7 +26,7 @@ function displayElement(obj)
 let console={
 	log: function(elt) {
 		refConsoleDiv = document.getElementById("consoleDiv");
-		if (typeof elt==="int" || typeof elt==="string" || typeof elt==="boolean")
+		if (typeof elt==="number" || typeof elt==="string" || typeof elt==="boolean")
 		{
 			refConsoleDiv.innerHTML+="<div class=\"consoleOut\">"+elt+"</div>";
 		} else if (typeof elt==="null") {
@@ -73,3 +78,4 @@ document.body.innerHTML="<h1>JS Console - VERSION TEST ("+version+")</h1>\n<div 
 
 refPrompt = document.getElementById("prompt");
 /*console.log(refPrompt)*/
+
